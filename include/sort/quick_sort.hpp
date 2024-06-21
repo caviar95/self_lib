@@ -2,8 +2,12 @@
  * @Author: Caviar
  * @Date: 2024-06-20 13:48:31
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-21 13:43:24
- * @Description: 
+ * @LastEditTime: 2024-06-21 23:04:40
+ * @Description: 快排算法
+ * 基本思想：
+ *   1 从数组中取出一个数作为基准数
+ *   2 分区，以基准数为中心，左边小于等于基准数，右边大于基准数 (分治思想)
+ *   3 重复递归处理
  */
 
 #pragma once
@@ -11,7 +15,7 @@
 #include <vector>
 
 template <typename T>
-void QuickSort(std::vector<T> &arr, int left, int right)
+void QuickSort(std::vector<T> &arr, int left, int right) // 闭区间
 {
     if (left >= right) {
         return;
