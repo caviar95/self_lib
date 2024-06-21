@@ -2,7 +2,7 @@
  * @Author: Caviar
  * @Date: 2024-06-21 22:56:49
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-21 23:43:02
+ * @LastEditTime: 2024-06-22 01:37:09
  * @Description: 
  */
 
@@ -11,6 +11,8 @@
 #include "../include/sort/bubble_sort.hpp"
 #include "../include/sort/quick_sort.hpp"
 #include "../include/sort/select_sort.hpp"
+#include "../include/sort/insert_sort.hpp"
+#include "../include/sort/shell_sort.hpp"
 
 void PrintResult(const std::string sortStr, const std::vector<int> &arr)
 {
@@ -41,6 +43,18 @@ void test_select(std::vector<int> arr)
     PrintResult("SelectSort", arr);
 }
 
+void test_insert(std::vector<int> arr)
+{
+    InsertSort(arr);
+    PrintResult("InsertSort", arr);
+}
+
+void test_shell(std::vector<int> arr)
+{
+    ShellSort(arr);
+    PrintResult("ShellSort", arr);
+}
+
 int main()
 {
     std::vector<int> arr{7, 4, 5, 2, 6, 1, 3, 3};
@@ -48,6 +62,8 @@ int main()
     test_quick(arr);
     test_bubble(arr);
     test_select(arr);
+    test_insert(arr);
+    test_shell(arr);
 
     return 0;
 }

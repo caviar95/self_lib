@@ -2,10 +2,12 @@
  * @Author: Caviar
  * @Date: 2024-06-21 23:14:20
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-21 23:27:42
+ * @LastEditTime: 2024-06-22 01:33:00
  * @Description: 冒泡排序
  * 基本思想：经过n-1轮筛选，每次将最大值放到无序区最后
  */
+
+#pragma once
 
 #include <vector>
 
