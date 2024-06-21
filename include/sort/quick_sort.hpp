@@ -2,7 +2,7 @@
  * @Author: Caviar
  * @Date: 2024-06-20 13:48:31
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-21 23:04:40
+ * @LastEditTime: 2024-06-21 23:17:39
  * @Description: 快排算法
  * 基本思想：
  *   1 从数组中取出一个数作为基准数
@@ -47,4 +47,10 @@ void QuickSort(std::vector<T> &arr, int left, int right) // 闭区间
         QuickSort(arr, left, i - 1);
         QuickSort(arr, i + 1, right);
     }
+}
+
+template <typename T>
+void QuickSort(std::vector<T> &arr)
+{
+    return QuickSort(arr, 0, arr.size() - 1);
 }
