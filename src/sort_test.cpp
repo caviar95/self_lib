@@ -2,7 +2,7 @@
  * @Author: Caviar
  * @Date: 2024-06-21 22:56:49
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-22 01:37:09
+ * @LastEditTime: 2024-06-22 15:04:41
  * @Description: 
  */
 
@@ -13,6 +13,7 @@
 #include "../include/sort/select_sort.hpp"
 #include "../include/sort/insert_sort.hpp"
 #include "../include/sort/shell_sort.hpp"
+#include "../include/sort/merge_sort.hpp"
 
 void PrintResult(const std::string sortStr, const std::vector<int> &arr)
 {
@@ -55,6 +56,12 @@ void test_shell(std::vector<int> arr)
     PrintResult("ShellSort", arr);
 }
 
+void test_merge(std::vector<int> arr)
+{
+    MergeSort(arr);
+    PrintResult("MergeSort", arr);
+}
+
 int main()
 {
     std::vector<int> arr{7, 4, 5, 2, 6, 1, 3, 3};
@@ -64,6 +71,7 @@ int main()
     test_select(arr);
     test_insert(arr);
     test_shell(arr);
+    test_merge(arr);
 
     return 0;
 }

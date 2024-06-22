@@ -2,7 +2,7 @@
  * @Author: Caviar
  * @Date: 2024-06-21 23:09:10
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-22 01:09:04
+ * @LastEditTime: 2024-06-22 15:03:28
  * @Description: 
 -->
 
@@ -15,7 +15,7 @@
 | 冒泡排序 | O(n^2)      | O(n) | O(n^2) | O(1) | In place | stable |
 | 选择排序 | O(n^2)      | O(n^2) | O(n^2) | O(1) | In place | non-stable |
 | 插入排序 | O(n^2)      | O(n) | O(n^2) | O(1) | In place | stable |
-| 希尔排序 | O(nlgn)     | O(nlg2(n)) | O(nlg2(n)) | O(1) | In place | non-stable |
+| 希尔排序 | O(nlgn)     | O(nlg^2(n)) | O(nlg^2(n)) | O(1) | In place | non-stable |
 | 归并排序 | O(nlgn)     | O(nlgn) | O(nlgn) | O(n) | Out place | stable |
 | 快速排序 | O(nlgn)     | O(nlgn) | O(n^2) | O(lgn) | In place | non-stable |
 | 堆排序  | O(nlgn)     | O(nlgn) | O(nlgn) | O(1) | In place | non-stable |
