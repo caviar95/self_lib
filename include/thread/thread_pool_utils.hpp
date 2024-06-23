@@ -2,7 +2,7 @@
  * @Author: Caviar
  * @Date: 2024-06-22 22:24:16
  * @LastEditors: Caviar
- * @LastEditTime: 2024-06-23 00:36:52
+ * @LastEditTime: 2024-06-23 23:28:00
  * @Description: bshoshany thread_pool based on c++17
  */
 
@@ -113,4 +113,4 @@ private:
     std::chrono::duration<double> elapsed_time_ = std::chrono::duration<double>::zero();
 };
 
-}
+} // namespace BS
